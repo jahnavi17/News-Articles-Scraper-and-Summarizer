@@ -2,3 +2,4 @@ GoogleNews
 newspaper3k
 sumy
 requests
+nltk
