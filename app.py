@@ -1,7 +1,6 @@
 import streamlit as st
 import pandas as pd
 import requests
-from bs4 import BeautifulSoup as bs
 from GoogleNews import GoogleNews
 from newspaper import Article
 from sumy.parsers.plaintext import PlaintextParser
