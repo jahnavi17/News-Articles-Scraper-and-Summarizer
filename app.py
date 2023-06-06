@@ -6,6 +6,8 @@ from newspaper import Article
 from sumy.parsers.plaintext import PlaintextParser
 from sumy.nlp.tokenizers import Tokenizer
 from sumy.summarizers.lsa import LsaSummarizer as Summarizer
+import nltk
+nltk.download('punkt')
 
 st.title("News Articles Scraper and Summarizer")
 st.markdown("## Hey there! You can get Extractive Summary of recent news articles quickly using this web app. You also get the link to the articles so that you can browse those that interest you.")
