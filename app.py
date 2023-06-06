@@ -48,4 +48,4 @@ if(input_key) :
     news_db['Text'] = news_db['link'].apply(get_article_text)
     news_db["Extractive_Summary"] = news_db["Text"].apply(text_summarize_extractive)
     
-    #st.write(news_db)
+    st.write(news_db)
