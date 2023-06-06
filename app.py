@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+import numpy as np
 import requests
 from GoogleNews import GoogleNews
 from newspaper import Article
@@ -50,5 +51,7 @@ if(input_key):
     news_db['Text'] = news_db['link'].apply(get_article_text)
     news_db["Extractive_Summary"] = news_db["Text"].apply(text_summarize_extractive)
     #news_db.drop(news_db[news_db['Text'] == "This article is not accessible"].index ,inplace=True)
+
+    st.write("Here are the 10 recently published articles on " +input_key +" with their summary!")
     st.write(news_db)
 #print(news_db.iloc[1])
